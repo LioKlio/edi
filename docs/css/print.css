@@ -1,0 +1,44 @@
+* { margin: 0; padding: 0; }
+body.main_body, th, td, p, div, span, ul, li, textarea, input, select { color: #000; font: 10pt Arial, Helvetica, sans-serif; }
+#we_genlist-news-links, #print, #edss { display: none; }
+h1, h2, h3 { color: #395e9b; font-weight: bold; text-transform: uppercase; }
+h1 { font-size: 1.4em; padding: 1em 0; }
+h2 { font-size: 1em; padding: 0.5em 0; }
+h3 { font-size: 0.9em; padding: 0.5em 0; text-transform: none; }
+a *{ text-decoration: none; border: 0; }
+img { border: 0; }
+.clear { clear: both; }
+
+/* sIFR */
+.sIFR-flash {
+  display    : none !important;
+  height     : 0;
+  width      : 0;
+  position   : absolute;
+  overflow   : hidden;
+}
+
+.sIFR-alternate {
+  visibility : visible !important;
+  display    : block   !important;
+  position   : static  !important;
+  left       : auto    !important;
+  top        : auto    !important;
+  width      : auto    !important;
+  height     : auto    !important;
+}
+
+
+/* main.css */
+
+
+/* editor.css */
+  /* tables */
+    /* all */
+.transparent_table, .standard_table, .colored_table { border-collapse: collapse; }
+.standard_table td, .colored_table, td.colored_table_r1, td.colored_table_r2 { border: 1px solid #000; }
+    /* standart */
+.standard_table td { padding: 3px 5px }
+    /* colored */
+td.colored_table_r1 { background-color: #E2E2E2; padding: 3px 5px; color: #000; }
+td.colored_table_r2 { background-color: #EDEDED; padding: 3px 5px; color: #000; }
