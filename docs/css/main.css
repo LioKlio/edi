@@ -73,13 +73,13 @@ body .section .head {font-family: 'Open Sans', Arial, sans-serif; font-weight: 6
   #header .logo {display: block; height: 70px;}
   #header._fixed .logo {height: 30px;}
     .logo img {display: block; position: relative; overflow: hidden; height: 400px; transition: width 1.5s, height 0.1s, opacity 0.5s .5s;}
-    .logo img.up {width: 170px; height: 70px; top:0; left:0; opacity:1; visibility: visible; }
-    .logo img.dwn {width: 0px; height: 30px; top:-50px; left:0; opacity:0; visibility: hidden; }
+    .logo.up img {width: 170px; height: 70px; top:0; left:0; opacity:1; visibility: visible; }
+    .logo.dwn img {width: 0px; height: 30px; top:-50px; left:0; opacity:0; visibility: hidden; }
 
-    .show_nav .logo img.up, #header._fixed .logo img.up {top:0; width: 0px; height: 0; opacity: 0; visibility: hidden;}
-    .show_nav .logo img.dwn, #header._fixed .logo img.dwn {top:0; width: 250px; opacity: 1; visibility: visible;}
-    .webedit #header .logo img.up, .webedit #header .logo img.dwn  {display: none;}
-    .webedit #header .logo img.forEditor {display: inline-block; height: 30px; width: 250px;}
+    .show_nav .logo.up img, #header._fixed .logo.up img {top:0; width: 0px; height: 0; opacity: 0; visibility: hidden;}
+    .show_nav .logo.dwn img, #header._fixed .logo.dwn img {top:0; width: 250px; opacity: 1; visibility: visible;}
+    .webedit #header .logo.up img, .webedit #header .logo.dwn img  {display: none;}
+    .webedit #header .logo.forEditor img {display: inline-block; height: 30px; width: 250px;}
 
   .header-tools {display: flex; align-items: center;}
   .langs {display: flex; margin: 0 0 0 40px; list-style-type: none;}
@@ -410,8 +410,8 @@ body .section .head {font-family: 'Open Sans', Arial, sans-serif; font-weight: 6
     #header, #header .container {height: 60px;}
     #header .container, #header._fixed .container { padding: 5px 2%;}
     #header .logo, #header._fixed .logo { height: 40px !important;}
-    #header .logo img.up, #header._fixed .logo img.up {display: block !important; margin-top: 0px; width: auto !important; height: 40px !important; opacity: 1; visibility: visible;}
-    #header .logo img.dwn, #header._fixed .logo img.dwn {display: none !important;}
+    #header .logo.up img, #header._fixed .logo.up img {display: block !important; margin-top: 0px; width: auto !important; height: 40px !important; opacity: 1; visibility: visible;}
+    #header .logo.dwn img, #header._fixed .logo.dwn img {display: none !important;}
     #slogan {font-size: 12vh; margin-bottom: 40px; line-height: 46px;}
 
     #solutions .flex-box {flex-direction: column}
@@ -419,7 +419,7 @@ body .section .head {font-family: 'Open Sans', Arial, sans-serif; font-weight: 6
   }
 
 @media screen and (max-width: 600px){
-  .show_nav .logo img.dwn, #header._fixed .logo img.dwn {height: 26px;}
+  .show_nav .logo.dwn img, #header._fixed .logo.dwn img {height: 26px;}
   .mobile-menu-trigger {margin: 0 20px;}
 
   #slogan {font-size: 60px; line-height: 66px;}
@@ -436,8 +436,8 @@ body .section .head {font-family: 'Open Sans', Arial, sans-serif; font-weight: 6
   #header, #header .container {height: 60px;}
   #header .container, #header._fixed .container { padding: 5px 2%;}
   #header .logo, #header._fixed .logo { height: 40px !important;}
-  #header .logo img.up, #header._fixed .logo img.up {display: block !important; margin-top: 0px; width: auto !important; height: 40px !important; opacity: 1; visibility: visible;}
-  #header .logo img.dwn, #header._fixed .logo img.dwn {display: none !important;}
+  #header .logo.up img, #header._fixed .logo.up img {display: block !important; margin-top: 0px; width: auto !important; height: 40px !important; opacity: 1; visibility: visible;}
+  #header .logo.dwn img, #header._fixed .logo.dwn img {display: none !important;}
   .langs {margin-left: 0;}
   .langs a {padding: 0 6px;}
 
