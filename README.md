@@ -1,8 +1,8 @@
 # EDI
 
 ### Links
-http://www.edi.ee/
-https://lioklio.github.io/edi/
+- http://www.edi.ee/
+- https://lioklio.github.io/edi/
 
 ### wave.webaim.org
 - http://wave.webaim.org/report#/http://lioklio.github.io/edi
