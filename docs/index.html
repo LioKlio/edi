@@ -26,7 +26,7 @@
   <link type="image/vnd.microsoft.icon" href="favicon.ico" rel="icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="mods/jQuery/jquery-1.11.3.min.js"></script>
-  <script src="js/material.min.js"></script>
+  <!-- <script src="js/material.min.js"></script> -->
   <!-- CSS -->
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Roboto:300,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
@@ -38,7 +38,7 @@
   <link href="css/swiper.min.css" rel="stylesheet">
   <link href="css/editor.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/print.css" rel="stylesheet" media="print">
+  <!-- <link href="css/print.css" rel="stylesheet" media="print"> -->
   <script>
     function goml(ml, b, a) {
       parent.location = ml + a + '@' + b
@@ -52,28 +52,26 @@
   </script>
 </head>
 
-<body class="mainbody indexpage  " id="scrolltop">
-
-  <header class="section header" id="header">
+<body class="mainbody indexpage" id="scrolltop">
+  <header class="title-of-page">
+    <h1>Cone Center company </h1>
+  </header>
+  <div class="section header" id="header">
 
     <div class="container">
       <a class="logo" href="default.htm">
         <img class="up" src="images/cone.svg" alt="cOne">
-        <img class="dwn" src="images/coneH.svg" alt="cOne - logotype dwn">
-        <img class="forEditor" src="images/logo.png" alt="cOne - logotype forEditor"></a>
+        <img class="dwn" src="images/coneH.svg" alt="logotype ofcOne">
+        <img class="forEditor" src="images/logo.png" alt="Logo for Editor"></a>
 
       <div class="header-tools">
-
-        <button class="navbar-toggler mobile-menu-trigger nbttn" type="button" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span><span></span><span></span></button>
-
+        <button class="navbar-toggler mobile-menu-trigger nbttn" type="button" value="menu">
+        <span class="navbar-toggler-icon"></span><span></span><span></span><span>menu</span></button>
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent popup_show" id="login" data-form="#portal" type="button">Login</button>
-
       </div>
-
     </div>
 
-    <nav class="navigation" id="navbarHeader" aria-label="Main Navigation">
+    <nav class="nav navigation">
       <ul>
         <li><a class="nav-item" data-href="#solutions">Port Community System</a></li>
         <li><a class="nav-item" data-href="#why">Why cooperate with Cone Center company?</a></li>
@@ -82,10 +80,11 @@
       </ul>
     </nav>
 
-  </header>
+  </div>
 
-  <main role="main">
-    <section class="section full jumbotron swiper-container" id="top">
+
+  <main>
+    <div class="section full jumbotron swiper-container" id="top">
       <div class="swiper-wrapper">
         <div class="swiper-slide" style="background-image: url(images/slider/0.jpg)"></div>
         <div class="swiper-slide" style="background-image: url(images/slider/1.jpg)"></div>
@@ -105,18 +104,15 @@
         <div class="swiper-slide" style="background-image: url(images/slider/15.jpg)"></div>
       </div>
 
-      <h1 class="head" id="slogan" aria-labelledby="header"><a data-href="#solutions">Port <span>Community System</span></a></h1>
+      <div class="head" id="slogan"><a data-href="#solutions">Port <span>Community System</span></a></div>
       <a id="next" data-href="#solutions"><i class="fa fa-chevron-down"></i></a>
 
-    </section>
+    </div>
 
-
-    <h2 style="display:none;">Port </h2>
-    <h3 style="display:none;">Port </h3>
-    <section class="section" id="solutions">
+    <article class="section" id="solutions">
       <div class="container flex-box">
         <div>
-          <h4 class="title">Port Community System</h4>
+          <h2 class="title">Port Community System</h2>
           <div class="content">
             <p>Smart information platform for terminal logistics.</p>
             <p>Terminal Community System has grown up from (C)One EDI Portal software. This&nbsp;is platform for exchange
@@ -129,17 +125,17 @@
               <li>air- and railway carriers.</li>
             </ul>
             <p>Terminal Community System is not a closed project, but it develops extremely rapidly. At the same time, the
-              number of participants and their roles&nbsp;are growing.</p>
+              number of participants and their roles are growing.</p>
             <p>Based on regulation (EU) No 910/2014 of the European Parliament was implemented set of standards for
               electronic identification and trust services for electronic transactions in the European Single Market.</p>
           </div>
         </div>
       </div>
-    </section>
+    </article>
 
-    <section class="section" id="why">
+    <article class="section" id="why">
       <div class="container">
-        <h4 class="title">Why cooperate with Cone Center company?</h4>
+        <h2 class="title">Why cooperate with Cone Center company?</h2>
         <div class="flex-box counter">
           <div id="clients">
             <img src="images/clients.svg" alt="customers counter">
@@ -158,11 +154,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </article>
 
-    <section class="section" id="about">
+    <article class="section" id="about">
       <div class="container">
-        <h4 class="title">About Cone Center company</h4>
+        <h2 class="title">About Cone Center company</h2>
         <div class="content">
           <p>Cone Center is a team of professionals with experience of implementing own IT solutions in transport &
             logistics area and integrating with other data systems. Company's employees have over 25 years experience on
@@ -171,44 +167,38 @@
             been IT systems developed and implemented for container, RO-RO, liquid, bulk and complex terminals, depot, and
             automotive logistics hubs. <br></p>
           <p>Right now we can offer you following online software:</p>
-          <table class="transparent_table">
-            <tr>
-              <td style="vertical-align:top;">
-                <ul>
-                  <li><a href="../www.cone.ee/LAPro_eng.html" target="_blank">Liner Agency Program (LAPro)</a> </li>
-                  <li><a href="../www.cone.ee/c_ONE_Terminal_eng.html" target="_blank">(C)One Terminal</a> </li>
-                  <li><a href="../www.cone.ee/c_ONE_Oil_Terminal_eng.html" target="_blank">(C)One Oil Terminal</a> </li>
-                  <li><a href="../www.cone.ee/c_ONE_Warehouse_en.html" target="_blank">(C)One Warehouse</a></li>
-                </ul>
-              </td>
-              <td style="vertical-align:top;">
-                <ul>
-                  <li><a href="../www.cone.ee/c_ONE_Forwarding_en.html" target="_blank">(C)One Forwarding</a> </li>
-                  <li><a href="../www.cone.ee/c_ONE_Oil_Trader_eng.html" target="_blank">(C)One Oil Trader</a> </li>
-                  <li><a href="../www.cone.ee/c_ONE_Ship_Agent_en.html" target="_blank">(C)One Ship Agent</a> </li>
-                  <li><a href="../www.cone.ee/emde-system.html" target="_blank">(C)One NSW System (EMDE)</a></li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-          <p>&nbsp;</p>
+          <div class="offers-list">
+            <ul>
+              <li><a href="../www.cone.ee/LAPro_eng.html" target="_blank">Liner Agency Program (LAPro)</a> </li>
+              <li><a href="../www.cone.ee/c_ONE_Terminal_eng.html" target="_blank">(C)One Terminal</a> </li>
+              <li><a href="../www.cone.ee/c_ONE_Oil_Terminal_eng.html" target="_blank">(C)One Oil Terminal</a> </li>
+              <li><a href="../www.cone.ee/c_ONE_Warehouse_en.html" target="_blank">(C)One Warehouse</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="../www.cone.ee/c_ONE_Forwarding_en.html" target="_blank">(C)One Forwarding</a> </li>
+              <li><a href="../www.cone.ee/c_ONE_Oil_Trader_eng.html" target="_blank">(C)One Oil Trader</a> </li>
+              <li><a href="../www.cone.ee/c_ONE_Ship_Agent_en.html" target="_blank">(C)One Ship Agent</a> </li>
+              <li><a href="../www.cone.ee/emde-system.html" target="_blank">(C)One NSW System (EMDE)</a></li>
+            </ul>
+          </div>
+
           <p>You can find more information on our corporate <a href="../www.cone.ee/index.html" target="_blank">website</a></p>
         </div>
       </div>
-    </section>
+    </article>
 
-    <section class="section" id="advice">
+    <article class="section" id="advice">
       <div class="container">
-        <h4 class="title">Do you need advice with IT solution for your company?</h4>
+        <h2 class="title">Do you need advice with IT solution for your company?</h2>
         <button class="mdl-button mdl-js-button mdl-button--large mdl-button--raised mdl-js-ripple-effect mdl-color--white mdl-color-text--primary-dark mdl-button--accent popup_show" data-form="#consult">Yes, I want consultation</button>
       </div>
-    </section>
+    </article>
 
-
-    <div class="popup">
+    <section class="popup">
       <div class="form-box" id="portal">
         <div class="close"></div>
-        <h4 class="form-box_head mdl-typography--title pblock">Portal entry</h4>
+        <h3 class="form-box_head mdl-typography--title pblock">Portal entry</h3>
         <div class="form-box_item opened" id="site">
           <div class="form-box_item_cont pblock">
             <form id="login_form" name="login_form">
@@ -231,7 +221,7 @@
       </div>
       <div class="form-box" id="consult">
         <div class="close"></div>
-        <h4 class="form-box_head mdl-typography--title pblock">Ask for advice</h4>
+        <h3 class="form-box_head mdl-typography--title pblock">Ask for advice</h3>
         <div class="form-box_item opened">
           <div class="form-box_item_cont pblock">
             <form id="concult-form">
@@ -279,9 +269,9 @@
           </div>
         </div>
       </div>
-    </div>
-
+    </section>
   </main>
+
 
   <footer class="section footer" id="contacts">
     <div class="container flex-box">
